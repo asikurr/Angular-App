@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
 
+  allowBtnServer = false;
+  constructor(){
+    setTimeout(() => {
+      this.allowBtnServer = true;
+    }, 2000)
+  }
 }
