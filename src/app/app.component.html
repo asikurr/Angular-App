@@ -2,9 +2,12 @@
     <div class="row">
         <div class="col-xs-12">
             <h3>Hello Angular</h3>
-            <input  type="text" [(ngModel)]="title" />
-            <p>{{title}}</p>
-            <hr/>
+            <input  type="text" [(ngModel)]="titles" />
+            
+            <!-- <p>{{title}}</p> -->
+            <!-- <button [disabled]="titles === ''" (click) = "onClearData()" class="btn btn-primary">Reset Data</button> -->
+            <button [disabled]="titles === ''" (click) = "titles = ''" class="btn btn-primary">Reset Data</button>
+            <hr/>  
             <!-- <app-servers></app-servers> -->
             <!-- <div app-servers></div> -->
             <div class="app-servers"></div> 
