@@ -9,10 +9,15 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
 
+  servetStatusIs = "Server are not created yet!";
   allowBtnServer = false;
   constructor(){
     setTimeout(() => {
       this.allowBtnServer = true;
     }, 2000)
+  }
+
+  onCreatedServer(){
+    this.servetStatusIs = "Server is Creating..";
   }
 }

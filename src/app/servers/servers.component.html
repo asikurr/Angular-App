@@ -1,3 +1,6 @@
-<button class="btn btn-primary" [disabled] = "!allowBtnServer">Allow Server</button>
+<button (click)="onCreatedServer()" class="btn btn-primary" [disabled] = "!allowBtnServer">Allow Server</button>
+{{allowBtnServer}}
+
+<p>{{servetStatusIs}}</p>
 <app-ser></app-ser>
 
