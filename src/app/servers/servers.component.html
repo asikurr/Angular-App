@@ -1,3 +1,8 @@
+<p>Server Name</p>
+<!-- <input type="text" (input)="OnInputServerName($event)" id=""> <br> -->
+<input type="text" [(ngModel)]="serverName" >
+<p>{{serverName}}</p>
+<br>
 <button (click)="onCreatedServer()" class="btn btn-primary" [disabled] = "!allowBtnServer">Allow Server</button>
 {{allowBtnServer}}
 
