@@ -4,4 +4,11 @@ import { Component } from '@angular/core';
     selector : 'app-ser',
     templateUrl: './server.component.html'
 })
-export class ServerComponent{ }
+export class ServerComponent{ 
+    serverId = 25;
+    serverStatus = 'Online';
+
+    getServerStatus(){
+        return this.serverStatus;
+    }
+}
