@@ -11,6 +11,7 @@ export class ServersComponent {
 
   servetStatusIs = "Server are not created yet!";
   allowBtnServer = false;
+  serverName = '';
   constructor(){
     setTimeout(() => {
       this.allowBtnServer = true;
@@ -20,4 +21,7 @@ export class ServersComponent {
   onCreatedServer(){
     this.servetStatusIs = "Server is Creating..";
   }
+  // OnInputServerName(event : Event){
+  //   this.serverName = (<HTMLInputElement>event.target).value;
+  // }
 }
