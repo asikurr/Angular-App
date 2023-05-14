@@ -13,6 +13,7 @@ export class ServersComponent {
   allowBtnServer = false;
   serverName = '';
   serverCreated = false;
+  servers = [''];
   constructor(){
     setTimeout(() => {
       this.allowBtnServer = true;
@@ -20,10 +21,13 @@ export class ServersComponent {
   }
 
   onCreatedServer(){
+    this.servers.push(this.serverName)
+    console.log(this.servers);
     this.serverCreated = true;
     this.servetStatusIs = "Server is Created, Name is " + this.serverName;
     //this.serverName = '';
   }
+  
   // OnInputServerName(event : Event){
   //   this.serverName = (<HTMLInputElement>event.target).value;
   // }
